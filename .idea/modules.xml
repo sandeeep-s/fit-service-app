@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/fit-service/fit-service.iml" filepath="$PROJECT_DIR$/fit-service/fit-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fit-service-app.iml" filepath="$PROJECT_DIR$/fit-service-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fit-service-rest-client/fit-service-rest-client.iml" filepath="$PROJECT_DIR$/fit-service-rest-client/fit-service-rest-client.iml" />
+    </modules>
+  </component>
+</project>
