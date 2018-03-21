@@ -4,7 +4,7 @@ import com.gefa.fit.client.domain.Asset;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class TestAssetFactory {
+public class TestFitFactory {
 
 	public Asset createAsset() {
 		int random = ThreadLocalRandom.current().nextInt(10000, 30000);

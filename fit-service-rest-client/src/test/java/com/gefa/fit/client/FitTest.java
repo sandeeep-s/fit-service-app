@@ -7,8 +7,7 @@ import com.gefa.fit.client.activities.ClientReadAssetActivity;
 import com.gefa.fit.client.domain.Asset;
 import com.gefa.fit.client.exceptions.NotFoundException;
 import com.gefa.fit.client.exceptions.ServiceFailureException;
-import com.gefa.fit.domain.TestAssetFactory;
-import org.jboss.resteasy.test.TestPortProvider;
+import com.gefa.fit.domain.TestFitFactory;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -19,7 +18,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 
-public class AssetTest {
+public class FitTest {
 
     @BeforeClass
     public static void init() throws Exception {
@@ -48,8 +47,8 @@ public class AssetTest {
     public void testCreateAsset() throws URISyntaxException, NotFoundException, ServiceFailureException {
         ClientCreateAssetActivity clientCreateAssetActivity = new ClientCreateAssetActivity();
 
-        TestAssetFactory testAssetFactory = new TestAssetFactory();
-        Asset asset = testAssetFactory.createAsset();
+        TestFitFactory testFitFactory = new TestFitFactory();
+        Asset asset = testFitFactory.createAsset();
 
         clientCreateAssetActivity.createAsset(asset, new URI(getEntryPointURI()));
 
