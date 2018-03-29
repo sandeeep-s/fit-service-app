@@ -11,7 +11,7 @@ import com.gefa.fit.application.domain.repositories.MapAssetRepository;
 import com.gefa.fit.application.exceptions.AssetCreationException;
 import com.gefa.fit.application.exceptions.AssetRemovalException;
 import com.gefa.fit.application.exceptions.AssetUpdateException;
-import com.gefa.fit.application.infrastructure.DomainEventsDispatcher;
+import com.gefa.fit.application.infrastructure.RXDomainEventsDispatcher;
 
 @ApplicationScoped
 public class AssetService {
@@ -21,7 +21,7 @@ public class AssetService {
     // private AssetRepository assetRepository;
 
     @Inject
-    private DomainEventsDispatcher domainEventsDispatcher;
+    private RXDomainEventsDispatcher domainEventsDispatcher;
 
     public Long create(Asset asset) {
 

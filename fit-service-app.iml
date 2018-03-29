@@ -79,5 +79,6 @@
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-security:9.4.9.v20180320" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-webapp:9.4.9.v20180320" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-xml:9.4.9.v20180320" level="project" />
+    <orderEntry type="library" name="Maven: io.reactivex.rxjava2:rxjava:2.1.12" level="project" />
   </component>
 </module>

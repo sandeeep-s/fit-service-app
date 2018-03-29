@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="268699c0-f86b-46f5-831e-390b071a614c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/jms/AssetEventAdapter.java" afterPath="$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/jms/AssetEventAdapter.java" />
+      <change beforePath="$PROJECT_DIR$/fit-service-app.iml" afterPath="$PROJECT_DIR$/fit-service-app.iml" />
+      <change beforePath="$PROJECT_DIR$/fit-service-rest-client/fit-service-rest-client.iml" afterPath="$PROJECT_DIR$/fit-service-rest-client/fit-service-rest-client.iml" />
+      <change beforePath="$PROJECT_DIR$/fit-service/fit-service.iml" afterPath="$PROJECT_DIR$/fit-service/fit-service.iml" />
+      <change beforePath="$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/application/AssetService.java" afterPath="$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/application/AssetService.java" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/fit-service/target/" />
     <ignored path="$PROJECT_DIR$/fit-service-rest-client/target/" />
@@ -17,20 +21,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="JettyServer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/server/JettyServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="JmsCDIServletContextListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/jms/JmsCDIServletContextListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="240">
               <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -39,12 +33,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AssetResourceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/rest/resources/AssetResourceImpl.java">
+      <file leaf-file-name="DomainEventsDispatcher.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/application/infrastructure/DomainEventsDispatcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="32" column="62" lean-forward="false" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="62" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RXDomainEventsDispatcher.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/application/infrastructure/RXDomainEventsDispatcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AssetService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/application/AssetService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,28 +72,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
               <caret line="27" column="46" lean-forward="false" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JMSServletContextListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/jms/JMSServletContextListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TextListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/jms/TextListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="31" column="9" lean-forward="false" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -93,7 +89,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AssetEventAdapter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FITAssetCreatedEventHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/outbound/async/fit/FITAssetCreatedEventHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AssetEventAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/jms/AssetEventAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -106,7 +112,7 @@
       <file leaf-file-name="FITAssetEventAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/jms/FITAssetEventAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="75">
               <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -118,8 +124,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+            <state relative-caret-position="615">
+              <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -173,19 +179,20 @@
         <option value="$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/jms/base/ActiveMQ.java" />
         <option value="$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/jms/TextListener.java" />
         <option value="$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/jms/CDIEventListener.java" />
-        <option value="$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/application/AssetService.java" />
         <option value="$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/server/Server.java" />
         <option value="$PROJECT_DIR$/fit-service/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/jms/JMSServletContextListener.java" />
         <option value="$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/jms/CDIServletInjection.java" />
         <option value="$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/server/UndertowServer.java" />
         <option value="$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/server/JettyServer.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/jms/AssetEventMessageHandler.java" />
         <option value="$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/rest/resources/AssetResourceImpl.java" />
         <option value="$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/rest/error/ErrorCodeNum.java" />
         <option value="$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/jms/FITAssetEventAdapter.java" />
         <option value="$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/jms/AssetEventAdapter.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/application/infrastructure/RXDomainEventsDispatcher.java" />
+        <option value="$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/application/AssetService.java" />
       </list>
     </option>
   </component>
@@ -199,10 +206,6 @@
   <component name="MavenProjectNavigator">
     <treeState>
       <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Fit Service App" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="Fit Service Rest Client" type="9519ce18:MavenProjectsStructure$ProjectNode" />
@@ -237,9 +240,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -290,6 +293,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="fit" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fit-service-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fit-service-app" type="462c0819:PsiDirectoryNode" />
+              <item name="fit-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fit" type="462c0819:PsiDirectoryNode" />
               <item name="boundary" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -301,25 +314,13 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="fit" type="462c0819:PsiDirectoryNode" />
               <item name="boundary" type="462c0819:PsiDirectoryNode" />
-              <item name="inbound" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fit-service-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fit-service-app" type="462c0819:PsiDirectoryNode" />
-              <item name="fit-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="fit" type="462c0819:PsiDirectoryNode" />
-              <item name="boundary" type="462c0819:PsiDirectoryNode" />
-              <item name="inbound" type="462c0819:PsiDirectoryNode" />
-              <item name="jms" type="462c0819:PsiDirectoryNode" />
+              <item name="outbound" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -335,6 +336,7 @@
       <recent name="com.gefa.fit.boundary.inbound.async" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gefa.fit.application.infrastructure" />
       <recent name="com.gefa.fit.server" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -461,27 +463,27 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.68384403" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.68384403" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286908" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286908" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -492,27 +494,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fit-service-rest-client/src/test/java/com/gefa/fit/client/FitTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/outbound/async/fit/FITAssetServiceAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/application/domain/events/AssetCreatedEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/application/domain/AggregateRoot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -573,10 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="27" column="60" lean-forward="false" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
-          <folding>
-            <element signature="e#578#579#0" expanded="false" />
-            <element signature="e#645#646#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -593,7 +570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -602,9 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -665,13 +638,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/jms/CDIEventListener.java" />
-    <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/application/AssetService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-webapp/9.4.9.v20180320/jetty-webapp-9.4.9.v20180320.jar!/org/eclipse/jetty/webapp/WebAppContext.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -726,9 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -737,16 +700,6 @@
         <state relative-caret-position="120">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/jms/JmsCDIServletContextListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -763,7 +716,7 @@
         <state relative-caret-position="75">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -776,19 +729,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/rest/error/ErrorCodeNum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="27" column="46" lean-forward="false" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/jms/FITAssetEventAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -802,13 +757,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/jms/FITAssetEventAdapter.java">
+    <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/outbound/async/fit/FITAssetCreatedEventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -817,6 +770,52 @@
         <state relative-caret-position="60">
           <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/boundary/inbound/jms/JmsCDIServletContextListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/application/infrastructure/DomainEventsDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="32" column="62" lean-forward="false" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/application/AssetService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fit-service/src/main/java/com/gefa/fit/application/infrastructure/RXDomainEventsDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
