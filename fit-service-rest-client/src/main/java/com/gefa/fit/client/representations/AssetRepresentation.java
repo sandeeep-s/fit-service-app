@@ -3,8 +3,6 @@ package com.gefa.fit.client.representations;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.gefa.fit.client.domain.Asset;
 
-import java.util.Arrays;
-
 public class AssetRepresentation extends Representation {
 
 	private Long id;

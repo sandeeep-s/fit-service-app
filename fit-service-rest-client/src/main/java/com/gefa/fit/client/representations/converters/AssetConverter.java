@@ -4,9 +4,7 @@ package com.gefa.fit.client.representations.converters;
 import com.gefa.fit.client.domain.Asset;
 import com.gefa.fit.client.representations.AssetRepresentation;
 
-import javax.enterprise.context.ApplicationScoped;
 
-@ApplicationScoped
 public class AssetConverter {
 
     public Asset toAsset(AssetRepresentation assetRepresentation) {

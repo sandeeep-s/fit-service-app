@@ -34,21 +34,11 @@ public class JettyServer {
 
 		WebAppContext context = new WebAppContext();
     	context.setContextPath(CONTEXT_ROOT);
-    	context.setResourceBase("src/main/resources");
+    	context.setResourceBase("WEB-INF");
+    	context.setDescriptor("./src/main/webapp/WEB-INF/web.xml");
     	jetty.setHandler(context);
 
-        final ServletHolder restEasyServlet = new ServletHolder(new HttpServletDispatcher());
-        restEasyServlet.setInitParameter("resteasy.servlet.mapping.prefix", APPLICATION_PATH);
-        restEasyServlet.setInitParameter("javax.ws.rs.Application", MyApp.class.getName());
-        context.addServlet(restEasyServlet, APPLICATION_PATH + "*");
-
-        context.setInitParameter("resteasy.injector.factory", "org.jboss.resteasy.cdi.CdiInjectorFactory");
-		context.addEventListener(new Listener());
-//		context.addEventListener(new JMSServletContextListener());
-
-
 		jetty.start();
-
 		jetty.join();
 
 

@@ -8,6 +8,7 @@ import com.gefa.fit.client.domain.Asset;
 import com.gefa.fit.client.exceptions.NotFoundException;
 import com.gefa.fit.client.exceptions.ServiceFailureException;
 import com.gefa.fit.domain.TestFitFactory;
+import com.gefa.fit.server.JettyServer;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -22,22 +23,13 @@ public class FitTest {
 
     @BeforeClass
     public static void init() throws Exception {
-//        MyServer.startContainer();
+        JettyServer.startServer();
     }
 
     @AfterClass
     public static void stop() throws Exception {
-  //      MyServer.stopContainer();
-
+        JettyServer.stopServer();
     }
-
-/*
-    private String getEntryPointURI() {
-        String testPortProviderURL = TestPortProvider.generateURL("/fit-asset-service/asset");
-        System.out.println("testPortProviderURL="+testPortProviderURL);
-        return testPortProviderURL;
-    }
-*/
 
 	private String getEntryPointURI() {
 		return "http://localhost:8082/fit-asset-service/asset";
@@ -64,6 +56,5 @@ public class FitTest {
         Assert.assertEquals(asset.getAssetName(), createdAsset.getAssetName());
 
     }
-
 
 }

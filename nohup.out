@@ -1,0 +1,47 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.gefa.ekf:fit-service:war:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.gefa.ekf:fit-service-app:0.0.1-SNAPSHOT, /Users/sandeepshinde/src/microservices/fit-service-app/pom.xml, line 136, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.gefa.ekf:fit-service-rest-client:jar:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.gefa.ekf:fit-service-app:0.0.1-SNAPSHOT, /Users/sandeepshinde/src/microservices/fit-service-app/pom.xml, line 136, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.gefa.ekf:fit-service-app:pom:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 136, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Fit Service 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) > validate @ fit-service >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) < validate @ fit-service <<<
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ fit-service ---
+ INFO | XNIO version 3.3.8.Final
+ INFO | XNIO NIO Implementation Version 3.3.8.Final
+ INFO | WELD-ENV-001007: Initialize Weld using ServletContextListener
+ INFO | WELD-000900: 3.0.3 (Final)
+ INFO | WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+ INFO | WELD-ENV-001302: Undertow detected, CDI injection will be available in Servlets, Filters and Listeners.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/Users/sandeepshinde/.m2/repository/org/slf4j/slf4j-simple/1.7.7/slf4j-simple-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/Users/sandeepshinde/.m2/repository/org/apache/activemq/activemq-all/5.14.3/activemq-all-5.14.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+Initialized ServletContext: null
+ WARN | WELD-000018: Executing producer field or method [BackedAnnotatedMethod] @Produces @ActiveMQ public com.gefa.fit.boundary.outbound.async.fit.JMSFacade.getConnectionFactory() on incomplete declaring bean Managed Bean [class com.gefa.fit.boundary.outbound.async.fit.JMSFacade] with qualifiers [@Any @Default] due to circular injection
+Inside context initialized assetEventMessageHandler=com.gefa.fit.boundary.inbound.jms.AssetEventMessageHandler@ed2b175
+[com.gefa.fit.server.UndertowServer.main()] INFO com.gefa.fit.boundary.inbound.jms.base.AbstractMessageHandler - Inside startReceiving method ActiveMQConnection.DEFAULT_BROKER_URL=failover://tcp://localhost:61616
+[ActiveMQ Task-1] INFO org.apache.activemq.transport.failover.FailoverTransport - Successfully connected to tcp://localhost:61616
+ INFO | RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.gefa.fit.server.UndertowServer$MyApp$Proxy$_$$_WeldClientProxy
+ INFO | RESTEASY002205: Adding provider class com.gefa.fit.boundary.inbound.rest.error.handlers.ExceptionHandler from Application class com.gefa.fit.server.UndertowServer$MyApp$Proxy$_$$_WeldClientProxy
+ INFO | RESTEASY002200: Adding class resource com.gefa.fit.boundary.inbound.rest.resources.AssetResourceImpl from Application class com.gefa.fit.server.UndertowServer$MyApp$Proxy$_$$_WeldClientProxy
+ INFO | RESTEASY002205: Adding provider class com.gefa.fit.boundary.inbound.rest.error.handlers.NoSuchAssetExceptionHandler from Application class com.gefa.fit.server.UndertowServer$MyApp$Proxy$_$$_WeldClientProxy
+Resteasy app started 
+Hit enter to stop it...
