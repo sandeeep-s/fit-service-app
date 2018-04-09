@@ -1,13 +1,25 @@
-package com.gefa.fit.boundary.inbound.rest.resources;
+package com.gefa.fit.boundary.inbound.v0_0_0.rest.resources;
 
-import com.gefa.fit.boundary.inbound.rest.representations.AssetRepresentation;
-import io.swagger.annotations.*;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
+import io.swagger.annotations.SwaggerDefinition;
+import io.swagger.annotations.Tag;
 
-import javax.ws.rs.*;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-@Path("/v0.0.1/asset")
+import com.gefa.fit.boundary.inbound.v0_0_0.rest.representations.AssetRepresentation;
+
+@Path("/v0.0.0/asset")
 @Api(value = "assets")
 @SwaggerDefinition(tags = { @Tag(name = "assets", description = "Operations on assets.") })
 public interface AssetResource {
@@ -23,7 +35,7 @@ public interface AssetResource {
 	@Path("/{assetId}")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-    AssetRepresentation updateAsset(@PathParam("assetId") Long id, AssetRepresentation assetRepresentation);
+	AssetRepresentation updateAsset(@PathParam("assetId") Long id, AssetRepresentation assetRepresentation);
 
 	@GET
 	@Path("/{assetId}")

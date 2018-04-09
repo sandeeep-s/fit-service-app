@@ -7,12 +7,9 @@ import com.gefa.fit.boundary.inbound.jms.base.Configuration;
 import com.gefa.fit.boundary.inbound.jms.events.AssetEvent;
 import com.google.gson.JsonSyntaxException;
 import org.apache.activemq.ActiveMQConnection;
-import org.apache.activemq.ActiveMQConnectionFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.ejb.ActivationConfigProperty;
-import javax.ejb.MessageDriven;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.jms.*;

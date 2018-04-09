@@ -1,9 +1,8 @@
 package com.gefa.fit.server;
 
-import com.gefa.fit.boundary.inbound.jms.JMSServletContextListener;
-import com.gefa.fit.boundary.inbound.rest.error.handlers.ExceptionHandler;
-import com.gefa.fit.boundary.inbound.rest.error.handlers.NoSuchAssetExceptionHandler;
-import com.gefa.fit.boundary.inbound.rest.resources.AssetResourceImpl;
+import com.gefa.fit.boundary.inbound.v0_0_0.rest.error.handlers.ExceptionHandler;
+import com.gefa.fit.boundary.inbound.v0_0_0.rest.error.handlers.NoSuchAssetExceptionHandler;
+import com.gefa.fit.boundary.inbound.v0_0_0.rest.resources.AssetResourceImpl;
 import org.eclipse.jetty.server.Server;
 
 import javax.ws.rs.ApplicationPath;
@@ -12,10 +11,7 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.eclipse.jetty.servlet.ServletHolder;
 import org.eclipse.jetty.webapp.WebAppContext;
-import org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher;
-import org.jboss.weld.environment.servlet.Listener;
 
 /**
  * UndertowServer class.

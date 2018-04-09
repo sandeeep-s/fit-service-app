@@ -1,9 +1,8 @@
 package com.gefa.fit.server;
 
-import com.gefa.fit.boundary.inbound.jms.JMSServletContextListener;
-import com.gefa.fit.boundary.inbound.rest.error.handlers.ExceptionHandler;
-import com.gefa.fit.boundary.inbound.rest.error.handlers.NoSuchAssetExceptionHandler;
-import com.gefa.fit.boundary.inbound.rest.resources.AssetResourceImpl;
+import com.gefa.fit.boundary.inbound.v0_0_0.rest.error.handlers.ExceptionHandler;
+import com.gefa.fit.boundary.inbound.v0_0_0.rest.error.handlers.NoSuchAssetExceptionHandler;
+import com.gefa.fit.boundary.inbound.v0_0_0.rest.resources.AssetResourceImpl;
 import io.undertow.server.handlers.resource.ClassPathResourceManager;
 import io.undertow.servlet.Servlets;
 import io.undertow.servlet.api.DeploymentInfo;

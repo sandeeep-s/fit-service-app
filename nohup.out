@@ -36,12 +36,12 @@ SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
 Initialized ServletContext: null
  WARN | WELD-000018: Executing producer field or method [BackedAnnotatedMethod] @Produces @ActiveMQ public com.gefa.fit.boundary.outbound.async.fit.JMSFacade.getConnectionFactory() on incomplete declaring bean Managed Bean [class com.gefa.fit.boundary.outbound.async.fit.JMSFacade] with qualifiers [@Any @Default] due to circular injection
-Inside context initialized assetEventMessageHandler=com.gefa.fit.boundary.inbound.jms.AssetEventMessageHandler@ed2b175
-[com.gefa.fit.server.UndertowServer.main()] INFO com.gefa.fit.boundary.inbound.jms.base.AbstractMessageHandler - Inside startReceiving method ActiveMQConnection.DEFAULT_BROKER_URL=failover://tcp://localhost:61616
+Inside context initialized assetEventMessageHandler=com.gefa.fit.boundary.inbound.v0_0_0.jms.AssetEventMessageHandler@ed2b175
+[com.gefa.fit.server.UndertowServer.main()] INFO com.gefa.fit.boundary.inbound.v0_0_0.jms.base.AbstractMessageHandler - Inside startReceiving method ActiveMQConnection.DEFAULT_BROKER_URL=failover://tcp://localhost:61616
 [ActiveMQ Task-1] INFO org.apache.activemq.transport.failover.FailoverTransport - Successfully connected to tcp://localhost:61616
  INFO | RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.gefa.fit.server.UndertowServer$MyApp$Proxy$_$$_WeldClientProxy
- INFO | RESTEASY002205: Adding provider class com.gefa.fit.boundary.inbound.rest.error.handlers.ExceptionHandler from Application class com.gefa.fit.server.UndertowServer$MyApp$Proxy$_$$_WeldClientProxy
- INFO | RESTEASY002200: Adding class resource com.gefa.fit.boundary.inbound.rest.resources.AssetResourceImpl from Application class com.gefa.fit.server.UndertowServer$MyApp$Proxy$_$$_WeldClientProxy
- INFO | RESTEASY002205: Adding provider class com.gefa.fit.boundary.inbound.rest.error.handlers.NoSuchAssetExceptionHandler from Application class com.gefa.fit.server.UndertowServer$MyApp$Proxy$_$$_WeldClientProxy
+ INFO | RESTEASY002205: Adding provider class com.gefa.fit.boundary.inbound.v0_0_0.rest.error.handlers.ExceptionHandler from Application class com.gefa.fit.server.UndertowServer$MyApp$Proxy$_$$_WeldClientProxy
+ INFO | RESTEASY002200: Adding class resource com.gefa.fit.boundary.inbound.v0_0_0.rest.resources.AssetResourceImpl from Application class com.gefa.fit.server.UndertowServer$MyApp$Proxy$_$$_WeldClientProxy
+ INFO | RESTEASY002205: Adding provider class com.gefa.fit.boundary.inbound.v0_0_0.rest.error.handlers.NoSuchAssetExceptionHandler from Application class com.gefa.fit.server.UndertowServer$MyApp$Proxy$_$$_WeldClientProxy
 Resteasy app started 
 Hit enter to stop it...

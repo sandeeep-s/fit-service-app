@@ -1,9 +1,9 @@
-package com.gefa.fit.boundary.inbound.rest.representations;
+package com.gefa.fit.boundary.inbound.v0_0_0.rest.representations;
+
+import java.util.Arrays;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.gefa.fit.application.domain.Asset;
-
-import java.util.Arrays;
 
 public class AssetRepresentation extends Representation {
 

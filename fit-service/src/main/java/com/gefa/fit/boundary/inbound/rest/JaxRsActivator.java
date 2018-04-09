@@ -1,9 +1,5 @@
 package com.gefa.fit.boundary.inbound.rest;
 
-import com.gefa.fit.boundary.inbound.rest.error.handlers.ExceptionHandler;
-import com.gefa.fit.boundary.inbound.rest.error.handlers.NoSuchAssetExceptionHandler;
-import com.gefa.fit.boundary.inbound.rest.resources.AssetResourceImpl;
-
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 import java.util.HashSet;
@@ -20,9 +16,19 @@ public class JaxRsActivator extends Application {
     @Override
     public Set<Class<?>> getClasses() {
         HashSet<Class<?>> classes = new HashSet<Class<?>>();
-        classes.add(AssetResourceImpl.class);
-        classes.add(ExceptionHandler.class);
-        classes.add(NoSuchAssetExceptionHandler.class);
+
+        classes.add(com.gefa.fit.boundary.inbound.rest.resources.AssetResourceImpl.class);
+/*
+        classes.add(com.gefa.fit.boundary.inbound.rest.error.handlers.ExceptionHandler.class);
+        classes.add(com.gefa.fit.boundary.inbound.rest.error.handlers.NoSuchAssetExceptionHandler.class);
+*/
+
+        classes.add(com.gefa.fit.boundary.inbound.v0_0_0.rest.resources.AssetResourceImpl.class);
+/*
+        classes.add(com.gefa.fit.boundary.inbound.v0_0_0.rest.error.handlers.ExceptionHandler.class);
+        classes.add(com.gefa.fit.boundary.inbound.v0_0_0.rest.error.handlers.NoSuchAssetExceptionHandler.class);
+*/
+
         return classes;
     }
 

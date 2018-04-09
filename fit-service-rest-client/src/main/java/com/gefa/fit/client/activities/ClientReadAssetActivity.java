@@ -19,6 +19,7 @@ public class ClientReadAssetActivity extends Activity {
 	}
 
 	public void readAsset() throws NotFoundException, ServiceFailureException {
+			System.out.println("assetURI="+assetURI);
 			AssetRepresentation assetRepresentation = httpBinding.retrieveAsset(assetURI);
 			this.asset = assetConverter.toAsset(assetRepresentation);
 			this.actions = new RepresentationHypermediaProcessor()

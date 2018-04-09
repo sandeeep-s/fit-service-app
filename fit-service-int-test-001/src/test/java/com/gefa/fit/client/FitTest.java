@@ -35,7 +35,7 @@ public class FitTest {
     }
 
 	private String getEntryPointURI() {
-		return "http://localhost:8082/fit-asset-service/asset";
+		return "http://localhost:8082/fit-asset-service/v0.0.1/asset";
 	}
 
     @Test

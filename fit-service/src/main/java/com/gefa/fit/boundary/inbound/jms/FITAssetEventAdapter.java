@@ -8,7 +8,7 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 
 @ApplicationScoped
-public class FITAssetEventAdapter extends AssetEventAdapter{
+public class FITAssetEventAdapter extends AssetEventAdapter {
 
     @Inject
     private AssetService assetService;

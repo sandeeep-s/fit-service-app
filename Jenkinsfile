@@ -26,8 +26,17 @@ pipeline {
             }
         }
         stage('Integration Tests') {
-            steps {
-                sh 'cd fit-service-rest-client && mvn test'
+            parallel {
+                stage('Test V0.0.0') {
+                    steps {
+                        sh 'cd fit-service-int-test-v000 && mvn test'
+                    }
+                }
+                stage('Test V0.0.0') {
+                    steps {
+                        sh 'cd fit-service-int-test-v001 && mvn test'
+                    }
+                }
             }
         }
         stage('Deploy') {

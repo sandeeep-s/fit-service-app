@@ -1,15 +1,15 @@
-package com.gefa.fit.boundary.inbound.rest.activities;
-
-import com.gefa.fit.application.AssetService;
-import com.gefa.fit.application.domain.Asset;
-import com.gefa.fit.boundary.inbound.rest.representations.AssetRepresentation;
-import com.gefa.fit.boundary.inbound.rest.representations.Link;
-import com.gefa.fit.boundary.inbound.rest.representations.converters.AssetConverter;
+package com.gefa.fit.boundary.inbound.v0_0_0.rest.activities;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.UriInfo;
+
+import com.gefa.fit.application.AssetService;
+import com.gefa.fit.application.domain.Asset;
+import com.gefa.fit.boundary.inbound.v0_0_0.rest.representations.AssetRepresentation;
+import com.gefa.fit.boundary.inbound.v0_0_0.rest.representations.Link;
+import com.gefa.fit.boundary.inbound.v0_0_0.rest.representations.converters.AssetConverter;
 
 @ApplicationScoped
 public class UpdateAssetActivity {

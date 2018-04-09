@@ -1,13 +1,13 @@
-package com.gefa.fit.boundary.inbound.rest.error.handlers;
-
-import com.gefa.fit.application.exceptions.NoSuchAssetException;
-import com.gefa.fit.boundary.inbound.rest.error.ErrorCodeNum;
-import com.gefa.fit.boundary.inbound.rest.error.GeneralErrorCode;
+package com.gefa.fit.boundary.inbound.v0_0_0.rest.error.handlers;
 
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;
+
+import com.gefa.fit.application.exceptions.NoSuchAssetException;
+import com.gefa.fit.boundary.inbound.v0_0_0.rest.error.ErrorCodeNum;
+import com.gefa.fit.boundary.inbound.v0_0_0.rest.error.GeneralErrorCode;
 
 @Provider
 public class NoSuchAssetExceptionHandler implements ExceptionMapper<NoSuchAssetException> {
