@@ -17,6 +17,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jettyVersion>9.4.9.v20180320</jettyVersion>
         <resteasyVersion>3.5.0.Final</resteasyVersion>
+        <activemqVersion>5.15.3</activemqVersion>
     </properties>
 
     <dependencies>
@@ -55,6 +56,16 @@
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-jmx</artifactId>
             <version>${jettyVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-broker</artifactId>
+            <version>${activemqVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-kahadb-store</artifactId>
+            <version>${activemqVersion}</version>
         </dependency>
 
     </dependencies>

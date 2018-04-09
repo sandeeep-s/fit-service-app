@@ -8,6 +8,7 @@ import com.gefa.fit.client.domain.Asset;
 import com.gefa.fit.client.exceptions.NotFoundException;
 import com.gefa.fit.client.exceptions.ServiceFailureException;
 import com.gefa.fit.domain.TestFitFactory;
+import com.gefa.fit.server.ActiveMQServer;
 import com.gefa.fit.server.JettyServer;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -23,12 +24,14 @@ public class FitTest {
 
     @BeforeClass
     public static void init() throws Exception {
+        ActiveMQServer.startBroker();
         JettyServer.startServer();
     }
 
     @AfterClass
     public static void stop() throws Exception {
         JettyServer.stopServer();
+        ActiveMQServer.stopBroker();
     }
 
 	private String getEntryPointURI() {
