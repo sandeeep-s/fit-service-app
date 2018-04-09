@@ -11,19 +11,28 @@ pipeline {
                 sh 'cd fit-service && mvn -B -DskipTests clean package'
             }
         }
-        stage('Unit Test') {
-            steps {
-                sh 'cd fit-service && mvn test'
+        stage('Test') {
+            parallel {
+                stage('Unit Test') {
+                    steps {
+                        sh 'cd fit-service && mvn test'
+                    }
+                }
+                stage('Code Quality') {
+                    steps {
+                        sh 'mvn sonar:sonar -Dsonar.organization=urssandy84-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=bf83ae8ffd39437e3b4f45e1f429c5e7b38f09bd'
+                    }
+                }
+            }
+            stage('Integration Test') {
+                steps {
+                    sh 'cd fit-service-rest-client && mvn test'
+                }
             }
         }
-        stage('Code Quality') {
+        stage('Deploy') {
             steps {
-                sh 'mvn sonar:sonar -Dsonar.organization=urssandy84-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=bf83ae8ffd39437e3b4f45e1f429c5e7b38f09bd'
-            }
-        }
-        stage('Integration Test') {
-            steps {
-                sh 'cd fit-service-rest-client && mvn test'
+                echo "Deploy!"
             }
         }
     }
