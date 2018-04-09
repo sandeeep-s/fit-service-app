@@ -11,7 +11,7 @@ pipeline {
                 sh 'cd fit-service && mvn -B -DskipTests clean package'
             }
         }
-        stage('Test') {
+        stage('Initial Tests') {
             parallel {
                 stage('Unit Test') {
                     steps {
@@ -24,10 +24,10 @@ pipeline {
                     }
                 }
             }
-            stage('Integration Test') {
-                steps {
-                    sh 'cd fit-service-rest-client && mvn test'
-                }
+        }
+        stage('Integration Tests') {
+            steps {
+                sh 'cd fit-service-rest-client && mvn test'
             }
         }
         stage('Deploy') {
