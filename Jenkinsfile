@@ -32,7 +32,7 @@ pipeline {
                         sh 'cd fit-service-int-test-v000 && mvn test'
                     }
                 }
-                stage('Test V0.0.0') {
+                stage('Test V0.0.1') {
                     steps {
                         sh 'cd fit-service-int-test-v001 && mvn test'
                     }
