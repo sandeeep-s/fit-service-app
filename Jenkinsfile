@@ -8,7 +8,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn -B -DskipTests clean package'
+                sh 'cd fit-service && mvn -B -DskipTests clean package'
+            }
+        }
+        stage('Unit Test') {
+            steps {
+                sh 'cd fit-service && mvn test'
             }
         }
         stage('Integration Test') {
