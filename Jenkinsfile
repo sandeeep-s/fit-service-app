@@ -11,10 +11,9 @@ pipeline {
                 sh 'mvn -B -DskipTests clean package'
             }
         }
-        stage('Test') {
+        stage('Integration Test') {
             steps {
-                sh 'mvn exec:java -pl fit-service -Dexec.mainClass="com.gefa.fit.server.UndertowServer"'
-                sh 'mvn -pl fit-service test'
+                sh 'cd fit-service-rest-client && mvn test'
             }
         }
     }
