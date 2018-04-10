@@ -4,7 +4,7 @@
     <groupId>com.gefa.ekf</groupId>
     <artifactId>fit-service-app</artifactId>
     <packaging>pom</packaging>
-    <version>0.0.0</version>
+    <version>1.0.0</version>
     <modules>
         <module>fit-service</module>
         <module>fit-service-rest-client</module>

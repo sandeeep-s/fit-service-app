@@ -29,7 +29,7 @@ pipeline {
             parallel {
                 stage('Test V0.0.1') {
                     steps {
-                        sh 'cd fit-service-int-test-v001 && mvn test'
+                        sh 'cd fit-service-int-test-v100 && mvn test'
                     }
                 }
             }
