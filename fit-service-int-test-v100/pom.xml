@@ -5,11 +5,11 @@
     <parent>
         <artifactId>fit-service-app</artifactId>
         <groupId>com.gefa.ekf</groupId>
-        <version>0.0.1</version>
+        <version>0.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>fit-service-int-test-v000</artifactId>
+    <artifactId>fit-service-int-test-v100</artifactId>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -63,7 +63,7 @@
         <dependency>
             <groupId>com.gefa.ekf</groupId>
             <artifactId>fit-service-rest-client</artifactId>
-            <version>0.0.0</version>
+            <version>0.0.1</version>
         </dependency>
     </dependencies>
 

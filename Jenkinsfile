@@ -20,8 +20,7 @@ pipeline {
                 }
                 stage('Code Quality') {
                     steps {
-                        sh 'cd fit-service && mvn sonar:sonar -Dsonar.organization=urssandy84-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=bf83ae8ffd39437e3b4f45e1f429c5e7b38f09bd'
-                        sh 'cd fit-service-rest-client && mvn sonar:sonar -Dsonar.organization=urssandy84-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=bf83ae8ffd39437e3b4f45e1f429c5e7b38f09bd'
+                        sh 'mvn sonar:sonar -Dsonar.organization=urssandy84-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=bf83ae8ffd39437e3b4f45e1f429c5e7b38f09bd'
                     }
                 }
             }

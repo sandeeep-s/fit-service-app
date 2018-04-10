@@ -7,7 +7,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-@Path("/v0.0.1/asset")
+@Path("/v1.0.0/asset")
 @Api(value = "assets")
 @SwaggerDefinition(tags = { @Tag(name = "assets", description = "Operations on assets.") })
 public interface AssetResource {

@@ -29,7 +29,7 @@ public class CreateAssetActivity {
 		Asset asset = assetConverter.toAsset(assetRepresentation);
 		Long assetId = assetService.create(asset);
 
-		String assetURI = uriInfo.getBaseUri() + "v0.0.1/asset/" + assetId;
+		String assetURI = uriInfo.getBaseUri() + "v1.0.0/asset/" + assetId;
 		Link assetSelflink = new Link("self", assetURI, MediaType.APPLICATION_XML);
 		Link assetUpdatelink = new Link("update", assetURI, MediaType.APPLICATION_XML);
 		Link assetDeletelink = new Link("remove", assetURI, MediaType.APPLICATION_XML);

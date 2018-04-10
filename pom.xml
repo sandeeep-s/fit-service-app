@@ -4,12 +4,11 @@
     <groupId>com.gefa.ekf</groupId>
     <artifactId>fit-service-app</artifactId>
     <packaging>pom</packaging>
-    <version>0.0.1</version>
+    <version>0.0.0</version>
     <modules>
         <module>fit-service</module>
         <module>fit-service-rest-client</module>
-        <module>fit-service-int-test-v000</module>
-        <module>fit-service-int-test-v001</module>
+        <module>fit-service-int-test-v100</module>
     </modules>
     <name>Fit Service App</name>
     <url>http://maven.apache.org</url>
