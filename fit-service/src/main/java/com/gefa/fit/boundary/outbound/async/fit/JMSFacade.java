@@ -1,5 +1,6 @@
 package com.gefa.fit.boundary.outbound.async.fit;
 
+import com.gefa.fit.Configuration;
 import com.gefa.fit.application.infrastructure.ActiveMQ;
 import com.gefa.fit.boundary.AbstractTransferObject;
 import com.gefa.fit.boundary.outbound.async.fit.domain.FITAsset;
@@ -12,6 +13,9 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Produces;
 import javax.inject.Inject;
 import javax.jms.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
 import java.util.UUID;
 
 @ApplicationScoped
@@ -25,12 +29,6 @@ public class JMSFacade {
 
 	@Inject
 	private Configuration configuration;
-
-	@Produces
-	@ActiveMQ
-	public ConnectionFactory getConnectionFactory() {
-		return new ActiveMQConnectionFactory(ActiveMQConnection.DEFAULT_BROKER_URL);
-	}
 
 	public void createAsset(FITAsset fitAsset) {
 		try {
